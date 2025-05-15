@@ -74,4 +74,10 @@ public class Vehicle {
     public void setOdometer(int odometer) {this.odometer = odometer;}
 
     public void setPrice(double price) {this.price = price;}
+
+    @Override
+    public String toString() {
+        return String.format("VIN: %d | Year: %d | Make: %s | Model: %s | Type: %s | Color: %s | Odometer: %d | Price: $%.2f",
+                vin, year, make, model, vehicleType, color, odometer, price);
+    }
 }
